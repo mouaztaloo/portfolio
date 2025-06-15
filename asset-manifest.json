@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/portfolio/static/js/main.e896a26f.js",
+    "static/js/453.acca0757.chunk.js": "/portfolio/static/js/453.acca0757.chunk.js",
+    "static/media/Resume_Mouaz_Taloo_Alolabi.pdf": "/portfolio/static/media/Resume_Mouaz_Taloo_Alolabi.28212ab4c59c35c31264.pdf",
+    "index.html": "/portfolio/index.html",
+    "main.e896a26f.js.map": "/portfolio/static/js/main.e896a26f.js.map",
+    "453.acca0757.chunk.js.map": "/portfolio/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.e896a26f.js"
+  ]
+}
