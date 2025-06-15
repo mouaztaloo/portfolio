@@ -1,10 +1,10 @@
-import React from "react";
 import { Box, Container, Typography, useTheme } from "@mui/material";
+import m3 from "../assets/m3.png";
 
 export default function Footer() {
   const theme = useTheme();
   const currentYear = new Date().getFullYear();
-  const logoSrc = "/logo192.png";
+  const logoSrc = m3;
   return (
     <Box
       component="footer"

@@ -1,8 +1,9 @@
 import React, { useRef, useEffect } from "react";
 import { Box, useTheme } from "@mui/material";
+import m3 from "../assets/m3.png";
 
 const logosCount = 8;
-const logoSrc = "/logo192.png";
+const logoSrc = m3 ;
 
 const AnimatedLogos = ({ containerSize }) => {
   const theme = useTheme();

@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
+import m3 from "../assets/m3.png";
 
 const sections = [
   { id: "welcome", label: "Welcome" },
@@ -72,7 +73,8 @@ export default function TopBar({ onToggleTheme, mode }) {
     document.getElementById(newValue)?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const logoSrc = "/logo192.png";
+  const logoSrc = m3;
+  
   return (
     <AppBar
       position="fixed"
