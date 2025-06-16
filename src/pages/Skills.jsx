@@ -47,10 +47,9 @@ const Skills = () => {
     <Box
       id="skills"
       component="section"
-      sx={{
-        py: 12,
-        bgcolor: theme.palette.background.default,
-        backgroundImage: `linear-gradient(135deg, ${theme.palette.background.default} 0%, ${theme.palette.primary.light}22 100%)`,
+     sx={{
+        py: 10,
+        bgcolor: theme.palette.background.paper,
       }}
     >
       <Box sx={{ maxWidth: 1400, mx: "auto", px: 3 }}>

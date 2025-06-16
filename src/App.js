@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { ThemeProvider, CssBaseline } from "@mui/material";
 import { getTheme } from "./styles/theme";
 import TopBar from "./components/TopBar";
 import Hero from "./pages/Hero";
 import About from "./pages/About";
+import WhatIDo from "./pages/WhatIDo";
 import Skills from "./pages/Skills";
 import Job from "./pages/Job";
 import Contact from "./pages/Contact";
@@ -36,6 +37,9 @@ export default function App() {
       </div>
       <div id="about">
         <About />
+      </div>
+       <div id="WhatIDo">
+        <WhatIDo />
       </div>
       <div id="skills">
         <Skills />

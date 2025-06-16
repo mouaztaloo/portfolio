@@ -64,7 +64,6 @@ const Job = () => {
       id="job"
       sx={{
         py: 12,
-        bgcolor: theme.palette.background.paper,
       }}
     >
       <Box sx={{ maxWidth: 1200, mx: "auto", px: 3 }}>

@@ -9,7 +9,6 @@ export default function Footer() {
     <Box
       component="footer"
       sx={{
-        bgcolor: theme.palette.background.paper,
         py: 4,
         color: theme.palette.text.primary,
       }}
