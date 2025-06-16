@@ -98,10 +98,7 @@ const Job = () => {
               { title, tech, description, features, gradientFrom, gradientTo },
               i
             ) => (
-              <Grid
-                key={i}
-                sx={{ display: "flex", justifyContent: "center" }}
-              >
+              <Grid key={i} sx={{ display: "flex", justifyContent: "center" }}>
                 <Paper
                   elevation={4}
                   sx={{

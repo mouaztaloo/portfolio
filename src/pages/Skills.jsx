@@ -7,18 +7,18 @@ const Skills = () => {
     {
       title: "Frameworks & Libraries",
       skills: ["React.js", "Vue.js", "Redux / Vuex"],
-      color: theme.palette.primary.main, 
+      color: theme.palette.primary.main,
       gradientFrom: "#1976d2",
-      gradientTo: "#115293", 
-      borderColor: "#bbdefb", 
+      gradientTo: "#115293",
+      borderColor: "#bbdefb",
     },
     {
       title: "Styling & Layout",
       skills: ["Tailwind CSS", "Bootstrap 5", "Sass", "MUI (Material-UI)"],
-      color: theme.palette.secondary.main, 
-      gradientFrom: "#7b4eff", 
-      gradientTo: "#5e24b3", 
-      borderColor: "#d1c4e9", 
+      color: theme.palette.secondary.main,
+      gradientFrom: "#7b4eff",
+      gradientTo: "#5e24b3",
+      borderColor: "#d1c4e9",
     },
     {
       title: "Programming Languages",
@@ -47,7 +47,7 @@ const Skills = () => {
     <Box
       id="skills"
       component="section"
-     sx={{
+      sx={{
         py: 10,
         bgcolor: theme.palette.background.paper,
       }}
@@ -90,7 +90,7 @@ const Skills = () => {
                 <Paper
                   elevation={3}
                   sx={{
-                    width: 280, 
+                    width: 280,
                     height: 320,
                     p: 3,
                     borderRadius: 3,
@@ -133,7 +133,7 @@ const Skills = () => {
                           background: `linear-gradient(90deg, ${gradientFrom}cc, ${gradientTo})`,
                           color: "#fff",
                           px: 2,
-                          height: 40, 
+                          height: 40,
                           width: 240,
                           borderRadius: 2,
                           textAlign: "center",

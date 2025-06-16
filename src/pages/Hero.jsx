@@ -4,7 +4,6 @@ import AnimatedLogos from "../components/AnimatedLogos";
 import HeroContent from "../components/HeroContent";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
-
 const Hero = () => {
   const theme = useTheme();
   const containerRef = useRef(null);
@@ -41,7 +40,7 @@ const Hero = () => {
     >
       <AnimatedLogos containerSize={containerSize} />
       <HeroContent />
-            <Box
+      <Box
         sx={{
           position: "absolute",
           bottom: 32,

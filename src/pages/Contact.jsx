@@ -21,7 +21,7 @@ const Contact = () => {
     <Box
       component="section"
       id="contact"
-       sx={{
+      sx={{
         py: 10,
         bgcolor: theme.palette.background.paper,
       }}

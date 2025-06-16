@@ -3,7 +3,7 @@ import { Box, useTheme } from "@mui/material";
 import m3 from "../assets/m3.png";
 
 const logosCount = 8;
-const logoSrc = m3 ;
+const logoSrc = m3;
 
 const AnimatedLogos = ({ containerSize }) => {
   const theme = useTheme();

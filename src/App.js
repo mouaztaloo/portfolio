@@ -38,7 +38,7 @@ export default function App() {
       <div id="about">
         <About />
       </div>
-       <div id="WhatIDo">
+      <div id="WhatIDo">
         <WhatIDo />
       </div>
       <div id="skills">

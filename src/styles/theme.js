@@ -1,25 +1,25 @@
 // styles/theme.js
-import { createTheme } from '@mui/material/styles';
+import { createTheme } from "@mui/material/styles";
 
-export const getTheme = (mode = 'light') => {
-  const isDark = mode === 'dark';
+export const getTheme = (mode = "light") => {
+  const isDark = mode === "dark";
 
   return createTheme({
     palette: {
       mode,
       primary: {
-        main: isDark ? '#90caf9' : '#1976d2',
+        main: isDark ? "#90caf9" : "#1976d2",
       },
       secondary: {
-        main: '#f50057',
+        main: "#f50057",
       },
       background: {
-        default: isDark ? '#121212' : '#f8f9fa',
-        paper: isDark ? '#1e1e1e' : '#ffffff',
+        default: isDark ? "#121212" : "#f8f9fa",
+        paper: isDark ? "#1e1e1e" : "#ffffff",
       },
       text: {
-        primary: isDark ? '#e0e0e0' : '#0B3B5B',
-        secondary: isDark ? '#9e9e9e' : '#4f4f4f',
+        primary: isDark ? "#e0e0e0" : "#0B3B5B",
+        secondary: isDark ? "#9e9e9e" : "#4f4f4f",
       },
     },
     typography: {
@@ -38,7 +38,7 @@ export const getTheme = (mode = 'light') => {
         styleOverrides: {
           root: {
             borderRadius: 8,
-            textTransform: 'none',
+            textTransform: "none",
           },
         },
       },
@@ -47,8 +47,8 @@ export const getTheme = (mode = 'light') => {
           root: {
             borderRadius: 16,
             boxShadow: isDark
-              ? '0 4px 20px rgba(0,0,0,0.5)'
-              : '0 4px 12px rgba(0,0,0,0.1)',
+              ? "0 4px 20px rgba(0,0,0,0.5)"
+              : "0 4px 12px rgba(0,0,0,0.1)",
           },
         },
       },

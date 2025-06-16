@@ -13,6 +13,7 @@ import Brightness7Icon from "@mui/icons-material/Brightness7";
 import m3 from "../assets/m3.png";
 
 const sections = [
+  { id: "welcome", label: "Welcome" },
   { id: "about", label: "About" },
   { id: "WhatIDo", label: "What I Do" },
   { id: "skills", label: "Skills" },
@@ -74,7 +75,7 @@ export default function TopBar({ onToggleTheme, mode }) {
   };
 
   const logoSrc = m3;
-  
+
   return (
     <AppBar
       position="fixed"
