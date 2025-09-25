@@ -18,7 +18,7 @@ const About = () => {
           maxWidth: 1200,
           mx: "auto",
           px: 3,
-        }}
+        }}  
       >
         <Typography
           variant="h3"
