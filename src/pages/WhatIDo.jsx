@@ -14,6 +14,7 @@ import {
   IconButton,
   useTheme,
 } from "@mui/material";
+import Reveal from "../components/Reveal";
 
 const WhatIDo = () => {
   const theme = useTheme();
@@ -89,63 +90,65 @@ const WhatIDo = () => {
         <Grid container spacing={4}>
           {services.map((service, index) => (
             <Grid xs={12} sm={6} md={4} key={index}>
-              <Card
-                elevation={0}
-                sx={{
-                  maxWidth: 300,
-                  minHeight: 280,
-                  mx: "auto",
-                  borderRadius: 3,
-                  ml: 4,
-                  mr: 3,
-                  p: 3,
-                  border: "1px solid #e0e0e0",
-                  transition: "0.3s ease",
-                  "&:hover": {
-                    borderColor: "#1976d2",
-                    boxShadow: "0 8px 24px rgba(0, 0, 0, 0.05)",
-                  },
-                }}
-              >
-                <Box
-                  display="flex"
-                  justifyContent="center"
-                  alignItems="center"
-                  width={64}
-                  height={64}
-                  mb={3}
-                  mx="auto"
-                  borderRadius="50%"
+              <Reveal key={index} delay={index * 0.1}>
+                <Card
+                  elevation={0}
                   sx={{
-                    background: "linear-gradient(135deg, #e3f2fd, #ede7f6)",
+                    maxWidth: 300,
+                    minHeight: 280,
+                    mx: "auto",
+                    borderRadius: 3,
+                    ml: 4,
+                    mr: 3,
+                    p: 3,
+                    border: "1px solid #e0e0e0",
+                    transition: "0.3s ease",
+                    "&:hover": {
+                      borderColor: "#1976d2",
+                      boxShadow: "0 8px 24px rgba(0, 0, 0, 0.05)",
+                    },
                   }}
                 >
-                  <IconButton
-                    disableRipple
+                  <Box
+                    display="flex"
+                    justifyContent="center"
+                    alignItems="center"
+                    width={64}
+                    height={64}
+                    mb={3}
+                    mx="auto"
+                    borderRadius="50%"
                     sx={{
-                      bgcolor: "transparent",
-                      "&:hover": { bgcolor: "transparent" },
+                      background: "linear-gradient(135deg, #e3f2fd, #ede7f6)",
                     }}
                   >
-                    {service.icon}
-                  </IconButton>
-                </Box>
-                <Typography
-                  variant="subtitle1"
-                  fontWeight="bold"
-                  gutterBottom
-                  textAlign="center"
-                >
-                  {service.title}
-                </Typography>
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  textAlign="center"
-                >
-                  {service.description}
-                </Typography>
-              </Card>
+                    <IconButton
+                      disableRipple
+                      sx={{
+                        bgcolor: "transparent",
+                        "&:hover": { bgcolor: "transparent" },
+                      }}
+                    >
+                      {service.icon}
+                    </IconButton>
+                  </Box>
+                  <Typography
+                    variant="subtitle1"
+                    fontWeight="bold"
+                    gutterBottom
+                    textAlign="center"
+                  >
+                    {service.title}
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="text.secondary"
+                    textAlign="center"
+                  >
+                    {service.description}
+                  </Typography>
+                </Card>
+              </Reveal>
             </Grid>
           ))}
         </Grid>

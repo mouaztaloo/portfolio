@@ -1,4 +1,5 @@
 import { Box, Typography, Grid, Paper, useTheme } from "@mui/material";
+import Reveal from "../components/Reveal";
 
 const Skills = () => {
   const theme = useTheme();
@@ -53,108 +54,112 @@ const Skills = () => {
       }}
     >
       <Box sx={{ maxWidth: 1400, mx: "auto", px: 3 }}>
-        <Typography
-          variant="h3"
-          component="h2"
-          fontWeight="bold"
-          color={theme.palette.text.primary}
-          textAlign="center"
-          mb={2}
-          sx={{ fontSize: { xs: "2.5rem", md: "3.5rem" } }}
-        >
-          Skills &{" "}
-          <Box component="span" color={theme.palette.primary.main}>
-            Expertise
-          </Box>
-        </Typography>
-        <Typography
-          variant="body1"
-          color={theme.palette.text.secondary}
-          textAlign="center"
-          mb={8}
-          sx={{ fontSize: "1.125rem" }}
-        >
-          I work with a wide set of modern frontend technologies
-        </Typography>
+        <Reveal>
+          <Typography
+            variant="h3"
+            component="h2"
+            fontWeight="bold"
+            color={theme.palette.text.primary}
+            textAlign="center"
+            mb={2}
+            sx={{ fontSize: { xs: "2.5rem", md: "3.5rem" } }}
+          >
+            Skills &{" "}
+            <Box component="span" color={theme.palette.primary.main}>
+              Expertise
+            </Box>
+          </Typography>
 
+          <Typography
+            variant="body1"
+            color={theme.palette.text.secondary}
+            textAlign="center"
+            mb={8}
+            sx={{ fontSize: "1.125rem" }}
+          >
+            I work with a wide set of modern frontend technologies
+          </Typography>
+        </Reveal>
         <Grid container spacing={4} justifyContent="center">
           {skillCategories.map(
             (
               { title, skills, gradientFrom, gradientTo, borderColor },
-              index
+              index,
             ) => (
               <Grid
                 key={index}
                 sx={{ display: "flex", justifyContent: "center" }}
               >
-                <Paper
-                  elevation={3}
-                  sx={{
-                    width: 280,
-                    height: 320,
-                    p: 3,
-                    borderRadius: 3,
-                    border: `2px solid ${borderColor}`,
-                    transition: "all 0.3s ease",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    "&:hover": {
-                      boxShadow: theme.shadows[6],
-                      transform: "translateY(-8px)",
-                    },
-                  }}
-                >
-                  <Typography
-                    variant="h6"
-                    fontWeight={600}
-                    color={theme.palette.text.primary}
-                    textAlign="center"
-                    mb={3}
-                  >
-                    {title}
-                  </Typography>
-
-                  <Box
+                <Reveal key={index} delay={index * 0.15}>
+                  <Paper
+                    elevation={3}
                     sx={{
+                      width: 280,
+                      height: 320,
+                      p: 3,
+                      borderRadius: 3,
+                      border: `2px solid ${borderColor}`,
+                      transition: "all 0.3s ease",
                       display: "flex",
                       flexDirection: "column",
-                      gap: 2,
                       alignItems: "center",
-                      width: "100%",
-                      flexGrow: 1,
-                      justifyContent: "center",
+                      "&:hover": {
+                        boxShadow: theme.shadows[6],
+                        transform: "translateY(-8px)",
+                      },
                     }}
                   >
-                    {skills.map((skill, i) => (
-                      <Box
-                        key={i}
-                        sx={{
-                          background: `linear-gradient(90deg, ${gradientFrom}cc, ${gradientTo})`,
-                          color: "#fff",
-                          px: 2,
-                          height: 40,
-                          width: 240,
-                          borderRadius: 2,
-                          textAlign: "center",
-                          fontWeight: 600,
-                          fontSize: "0.9rem",
-                          boxShadow: theme.shadows[1],
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          whiteSpace: "nowrap",
-                          overflow: "hidden",
-                          textOverflow: "ellipsis",
-                        }}
-                      >
-                        {skill}
-                      </Box>
-                    ))}
-                  </Box>
-                </Paper>
+                    <Typography
+                      variant="h6"
+                      fontWeight={600}
+                      color={theme.palette.text.primary}
+                      textAlign="center"
+                      mb={3}
+                    >
+                      {title}
+                    </Typography>
+
+                    <Box
+                      sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: 2,
+                        alignItems: "center",
+                        width: "100%",
+                        flexGrow: 1,
+                        justifyContent: "center",
+                      }}
+                    >
+                      {skills.map((skill, i) => (
+                        <Box
+                          key={i}
+                          sx={{
+                            background: `linear-gradient(90deg, ${gradientFrom}cc, ${gradientTo})`,
+                            color: "#fff",
+                            px: 2,
+                            height: 40,
+                            width: 240,
+                            borderRadius: 2,
+                            textAlign: "center",
+                            fontWeight: 600,
+                            fontSize: "0.9rem",
+                            boxShadow: theme.shadows[1],
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            whiteSpace: "nowrap",
+                            overflow: "hidden",
+                            textOverflow: "ellipsis",
+                          }}
+                        >
+                          {skill}
+                        </Box>
+                      ))}
+                    </Box>
+                  </Paper>
+                </Reveal>
               </Grid>
-            )
+            ),
           )}
         </Grid>
 
