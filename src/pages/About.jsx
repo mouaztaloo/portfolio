@@ -18,7 +18,7 @@ const About = () => {
           maxWidth: 1200,
           mx: "auto",
           px: 3,
-        }}  
+        }}
       >
         <Typography
           variant="h3"
@@ -67,11 +67,9 @@ const About = () => {
                 color={theme.palette.text.secondary}
                 sx={{ lineHeight: 1.6 }}
               >
-                I'm a passionate frontend developer with extensive experience
-                crafting responsive and accessible user interfaces. My journey
-                began with a fascination for design and web aesthetics, which
-                naturally evolved into building professional, scalable frontend
-                architectures.
+                Front-End Developer with 5+ years of experience building
+                scalable web applications and enterprise dashboards. Specialized
+                in React (TypeScript) and Vue.js
               </Typography>
 
               <Typography
@@ -79,10 +77,11 @@ const About = () => {
                 color={theme.palette.text.secondary}
                 sx={{ lineHeight: 1.6 }}
               >
-                Throughout my career, I've contributed to startups, freelance
-                job, and full-scale production apps, always focusing on creating
-                exceptional user experiences that combine beautiful design with
-                robust functionality.
+                with strong expertise in component-based architecture, state
+                management, and performance optimization. Proven experience
+                building complex UI systems including pricing engines,
+                role-based access control (RBAC), analytics dashboards, and
+                real-time notification systems.
               </Typography>
 
               <Typography

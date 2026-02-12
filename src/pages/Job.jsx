@@ -4,59 +4,106 @@ const Job = () => {
   const theme = useTheme();
 
   const job = [
-    {
-      title: "Web Development",
-      tech: "Freelance, Self-employed | Oct 2020 – Present",
-      description: [
-        "Designed, developed, and maintained web applications using ( Vue.js & React.js ) and modern front-end technologies.",
-        "Created responsive and user-friendly interfaces, improving overall user satisfaction.",
-      ],
-      features: [
-        "Responsive Design",
-        "Component-based Architecture",
-        "State Managemen",
-        "API Integration ",
-        "Performance Optimization",
-        "Cross-browser Compatibility",
-      ],
-      gradientFrom: theme.palette.primary.main,
-      gradientTo: theme.palette.secondary.dark || "#6b21a8",
-    },
-    {
-      title: "Customer Services",
-      tech: "Movo Delivery | May 2022 – Nov 2022",
-      description:
-        "Provided customer support, resolving delivery issues efficiently and ensuring customer satisfaction.",
-      features: [
-        "Issue Reporting System ",
-        "Real-time Chat Support",
-        "Delivery Status Updates",
-        "Customer Feedback Collection",
-      ],
-      gradientFrom: "#22c55e",
-      gradientTo: theme.palette.primary.main,
-    },
-    {
-      title: "Front-end Developer",
-      tech: "Apps and More | Aug 2024 – Dec 2024",
-      description: [
-        "Designing and developing web applications using Vue.js.",
-        "Collaborating with teams to build dynamic and efficient front-end solutions.",
-      ],
-      features: [
-        "Vue.js",
-        "React.js",
-        "Component-based Architecture",
-        "Team Collaboration",
-        "API Integration",
-        "Responsive UI Design",
-        "Code Reusability",
-        "Version Control (Git)",
-      ],
-      gradientFrom: "#7c3aed",
-      gradientTo: "#ec4899",
-    },
-  ];
+  {
+    title: "Front-End Developer",
+    tech: "AstroCodez | Dec 2025 – Present",
+    description: [
+      "Leading front-end development using React (TypeScript) and modern component-based architecture.",
+      "Architecting scalable UI systems and reusable component libraries to support long-term product growth.",
+      "Defining front-end standards and best practices to ensure maintainability and performance.",
+      "Collaborating with product and backend teams to translate business requirements into technical solutions.",
+      "Driving performance optimization and responsive design across the platform.",
+    ],
+    features: [
+      "React (TypeScript)",
+      "Architecture Design",
+      "Component Libraries",
+      "Performance Optimization",
+      "Code Standards",
+      "Product Collaboration",
+    ],
+    gradientFrom: theme.palette.primary.main,
+    gradientTo: theme.palette.secondary.dark || "#6b21a8",
+  },
+  {
+    title: "Front-End Developer",
+    tech: "OneDoor | Nov 2025 – Jan 2026",
+    description: [
+      "Designed and developed scalable web applications using React (TypeScript).",
+      "Built dynamic, reusable UI components and optimized application performance.",
+      "Collaborated with cross-functional teams to deliver maintainable front-end solutions.",
+    ],
+    features: [
+      "React (TypeScript)",
+      "Reusable Components",
+      "Performance Optimization",
+      "Cross-Team Collaboration",
+      "Responsive Design",
+    ],
+    gradientFrom: "#22c55e",
+    gradientTo: theme.palette.primary.main,
+  },
+  {
+    title: "Front-End Developer",
+    tech: "No Name Group | Jul 2025 – Oct 2025",
+    description: [
+      "Developed and maintained the Setalkel admin dashboard for ordering systems.",
+      "Built product catalog management interfaces with variants and categories.",
+      "Implemented pricing logic and role-based access control (RBAC).",
+      "Integrated Firebase push notifications and analytics dashboards.",
+    ],
+    features: [
+      "Admin Dashboards",
+      "RBAC",
+      "Pricing Systems",
+      "Firebase Integration",
+      "Analytics UI",
+      "Order Workflows",
+    ],
+    gradientFrom: "#7c3aed",
+    gradientTo: "#ec4899",
+  },
+  {
+    title: "Front-End Developer",
+    tech: "Apps&more | Aug 2024 – Dec 2024",
+    description: [
+      "Designed and maintained web applications using Vue.js and React.js.",
+      "Built responsive, user-friendly interfaces with modern front-end technologies.",
+      "Improved performance through UI optimization and clean component architecture.",
+    ],
+    features: [
+      "Vue.js",
+      "React.js",
+      "Responsive UI",
+      "Component Architecture",
+      "UI Optimization",
+      "Git",
+    ],
+    gradientFrom: "#0ea5e9",
+    gradientTo: "#6366f1",
+  },
+  {
+    title: "Front-End Developer",
+    tech: "Freelance | Oct 2020 – Jan 2026",
+    description: [
+      "Delivered end-to-end front-end solutions using React (TypeScript) and Vue.js.",
+      "Developed dynamic dashboards and interactive user interfaces.",
+      "Implemented state management, routing, and API integrations.",
+      "Improved application performance through code optimization and restructuring.",
+    ],
+    features: [
+      "React (TypeScript)",
+      "Vue.js",
+      "State Management",
+      "API Integration",
+      "Dashboards",
+      "Performance Tuning",
+    ],
+    gradientFrom: "#f59e0b",
+    gradientTo: "#ef4444",
+  },
+];
+
 
   return (
     <Box
