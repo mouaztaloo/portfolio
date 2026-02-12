@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.cd524d76.js",
+    "main.js": "/portfolio/static/js/main.d7763a26.js",
     "static/js/453.acca0757.chunk.js": "/portfolio/static/js/453.acca0757.chunk.js",
     "static/media/m3.png": "/portfolio/static/media/m3.b9d8cb80240153f1f5ec.png",
-    "static/media/Resume_Mouaz_Taloo_Alolabi.pdf": "/portfolio/static/media/Resume_Mouaz_Taloo_Alolabi.e378cb3d7f349ae81621.pdf",
+    "static/media/Resume_Mouaz_Taloo_Alolabi.pdf": "/portfolio/static/media/Resume_Mouaz_Taloo_Alolabi.d8f6a2707a3547ff13af.pdf",
     "index.html": "/portfolio/index.html",
-    "main.cd524d76.js.map": "/portfolio/static/js/main.cd524d76.js.map",
+    "main.d7763a26.js.map": "/portfolio/static/js/main.d7763a26.js.map",
     "453.acca0757.chunk.js.map": "/portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.cd524d76.js"
+    "static/js/main.d7763a26.js"
   ]
 }
