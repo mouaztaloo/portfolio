@@ -182,7 +182,7 @@ const Contact = () => {
                 <Typography>
                   Bachelor’s Degree in Computer Software Engineering
                 </Typography>
-                <Typography>2016 – 2023</Typography>
+                <Typography>2016 – 2021</Typography>
               </Box>
 
               <Button

@@ -3,6 +3,7 @@ import { Box, useTheme } from "@mui/material";
 import AnimatedLogos from "../components/AnimatedLogos";
 import HeroContent from "../components/HeroContent";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const theme = useTheme();
@@ -40,23 +41,41 @@ const Hero = () => {
     >
       <AnimatedLogos containerSize={containerSize} />
       <HeroContent />
-      <Box
-        sx={{
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{
+          opacity: 1,
+          y: [0, -10, 0],
+        }}
+        transition={{
+          opacity: { duration: 1.2, delay: 1.5 },
+          y: {
+            duration: 2,
+            repeat: Infinity,
+            ease: "easeInOut",
+          },
+        }}
+        onClick={() =>
+          document
+            .getElementById("about")
+            ?.scrollIntoView({ behavior: "smooth" })
+        }
+        style={{
           position: "absolute",
           bottom: 32,
           left: "50%",
           transform: "translateX(-50%)",
-          animation: "bounce 2s infinite",
           color: theme.palette.text.secondary,
           zIndex: 2,
-          "@keyframes bounce": {
-            "0%, 100%": { transform: "translateX(-50%) translateY(0)" },
-            "50%": { transform: "translateX(-50%) translateY(-10px)" },
-          },
+          cursor: "pointer",
+        }}
+        whileHover={{
+          scale: 1.15,
+          transition: { duration: 0.2 },
         }}
       >
         <ArrowDownwardIcon fontSize="large" />
-      </Box>
+      </motion.div>
     </Box>
   );
 };
